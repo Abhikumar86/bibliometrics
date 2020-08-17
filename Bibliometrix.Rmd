@@ -2,7 +2,9 @@
 title: "Bibliometric Analysis"
 author: "Abhishek Kumar"
 date: "17 August 2020"
-output: html_document
+output: 
+      html_document:
+            keep_md: true
 ---
 
 In this tutorial, I will show you how to conduct a simple bibliometric analysis 
@@ -32,7 +34,7 @@ Then all documents were exported in `BibTex` format by selecting all the fields.
 Then the data is converted into a dataframe using the function `convert2df()`.
 
 ```{r}
-file_scopus <- "D:/R_tutorials/scopus.bib"
+file_scopus <- "D:/R_tutorials/bibliometrics/scopus.bib"
 M_scopus <- convert2df(file = file_scopus, dbsource = "scopus", format = "bibtex")
 ```
 
@@ -45,7 +47,7 @@ Then exported in `BibTex` format using the *Export to Other File Formats* Option
 
 ```{r}
 library(bibliometrix)
-file_wos <- "D:/R_tutorials/wos.bib"
+file_wos <- "D:/R_tutorials/bibliometrics/wos.bib"
 M_wos <- convert2df(file = file_wos, dbsource = "isi", format = "bibtex")
 ```
 
