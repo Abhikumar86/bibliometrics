@@ -64,7 +64,7 @@ M_scopus <- convert2df(file = file_scopus, dbsource = "scopus", format = "bibtex
     ## 
     ## Generating affiliation field tag AU_UN from C1:  Done!
 
-Similarlt, the query was made to the *Web of Science Core Collection* database in *Basic search* by specifying option as *Topic* and time span *1989-2020*. This resulted in total 198 documents. All the documents were selected by selecting all the pages and then added to the *Marked List*. Then *All records in this list (up to 500)* option is checked out. Then from Select Conten *Select All* Option is checked. Then Then exported in `BibTex` format using the *Export to Other File Formats* Option.
+Similarly, the query was made to the *Web of Science Core Collection* database in *Basic search* by specifying option as *Topic* and time span *1989-2020*. This resulted in total 198 documents. All the documents were selected by selecting all the pages and then added to the *Marked List*. Then *All records in this list (up to 500)* option is checked out. Then from Select Conten *Select All* Option is checked. Then Then exported in `BibTex` format using the *Export to Other File Formats* Option.
 
 ``` r
 library(bibliometrix)
